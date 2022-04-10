@@ -1,0 +1,300 @@
+Nr,Gebiet,gehört zu,Bundesland,Label
+1,Flensburg – Schleswig,1,Schleswig-Holstein,Western Germany
+2,Nordfriesland – Dithmarschen Nord,1,Schleswig-Holstein,Western Germany
+3,Steinburg – Dithmarschen Süd,1,Schleswig-Holstein,Western Germany
+4,Rendsburg-Eckernförde,1,Schleswig-Holstein,Western Germany
+5,Kiel,1,Schleswig-Holstein,Cities
+6,Plön – Neumünster,1,Schleswig-Holstein,Western Germany
+7,Pinneberg,1,Schleswig-Holstein,Western Germany
+8,Segeberg – Stormarn-Mitte,1,Schleswig-Holstein,Western Germany
+9,Ostholstein – Stormarn-Nord,1,Schleswig-Holstein,Western Germany
+10,Herzogtum Lauenburg – Stormarn-Süd,1,Schleswig-Holstein,Western Germany
+11,Lübeck,1,Schleswig-Holstein,Western Germany
+12,Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I,13,Mecklenburg-Vorpommern,Eastern Germany
+13,Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I,13,Mecklenburg-Vorpommern,Eastern Germany
+14,Rostock – Landkreis Rostock II,13,Mecklenburg-Vorpommern,Eastern Germany
+15,Vorpommern-Rügen – Vorpommern-Greifswald I,13,Mecklenburg-Vorpommern,Eastern Germany
+16,Mecklenburgische Seenplatte I – Vorpommern-Greifswald II,13,Mecklenburg-Vorpommern,Eastern Germany
+17,Mecklenburgische Seenplatte II – Landkreis Rostock III,13,Mecklenburg-Vorpommern,Eastern Germany
+18,Hamburg-Mitte,2,Hamburg,Cities
+19,Hamburg-Altona,2,Hamburg,Cities
+20,Hamburg-Eimsbüttel,2,Hamburg,Cities
+21,Hamburg-Nord,2,Hamburg,Cities
+22,Hamburg-Wandsbek,2,Hamburg,Cities
+23,Hamburg-Bergedorf – Harburg,2,Hamburg,Cities
+24,Aurich – Emden,3,Niedersachsen,Western Germany
+25,Unterems,3,Niedersachsen,Western Germany
+26,Friesland – Wilhelmshaven – Wittmund,3,Niedersachsen,Western Germany
+27,Oldenburg – Ammerland,3,Niedersachsen,Western Germany
+28,Delmenhorst – Wesermarsch – Oldenburg-Land,3,Niedersachsen,Western Germany
+29,Cuxhaven – Stade II,3,Niedersachsen,Western Germany
+30,Stade I – Rotenburg II,3,Niedersachsen,Western Germany
+31,Mittelems,3,Niedersachsen,Western Germany
+32,Cloppenburg – Vechta,3,Niedersachsen,Western Germany
+33,Diepholz – Nienburg I,3,Niedersachsen,Western Germany
+34,Osterholz – Verden,3,Niedersachsen,Western Germany
+35,Rotenburg I – Heidekreis,3,Niedersachsen,Western Germany
+36,Harburg,3,Niedersachsen,Western Germany
+37,Lüchow-Dannenberg – Lüneburg,3,Niedersachsen,Western Germany
+38,Osnabrück-Land,3,Niedersachsen,Western Germany
+39,Stadt Osnabrück,3,Niedersachsen,Western Germany
+40,Nienburg II – Schaumburg,3,Niedersachsen,Western Germany
+41,Stadt Hannover I,3,Niedersachsen,Cities
+42,Stadt Hannover II,3,Niedersachsen,Cities
+43,Hannover-Land I,3,Niedersachsen,Western Germany
+44,Celle – Uelzen,3,Niedersachsen,Western Germany
+45,Gifhorn – Peine,3,Niedersachsen,Western Germany
+46,Hameln-Pyrmont – Holzminden,3,Niedersachsen,Western Germany
+47,Hannover-Land II,3,Niedersachsen,Western Germany
+48,Hildesheim,3,Niedersachsen,Western Germany
+49,Salzgitter – Wolfenbüttel,3,Niedersachsen,Western Germany
+50,Braunschweig,3,Niedersachsen,Cities
+51,Helmstedt – Wolfsburg,3,Niedersachsen,Western Germany
+52,Goslar – Northeim – Osterode,3,Niedersachsen,Western Germany
+53,Göttingen,3,Niedersachsen,Western Germany
+54,Bremen I,4,Bremen,Cities
+55,Bremen II – Bremerhaven,4,Bremen,Cities
+56,Prignitz – Ostprignitz-Ruppin – Havelland I,12,Brandenburg,Eastern Germany
+57,Uckermark – Barnim I,12,Brandenburg,Eastern Germany
+58,Oberhavel – Havelland II,12,Brandenburg,Eastern Germany
+59,Märkisch-Oderland – Barnim II,12,Brandenburg,Eastern Germany
+60,Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I,12,Brandenburg,Eastern Germany
+61,Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II,12,Brandenburg,Eastern Germany
+62,Dahme-Spreewald – Teltow-Fläming III – Oberspreewald-Lausitz I,12,Brandenburg,Eastern Germany
+63,Frankfurt (Oder) – Oder-Spree,12,Brandenburg,Eastern Germany
+64,Cottbus – Spree-Neiße,12,Brandenburg,Eastern Germany
+65,Elbe-Elster – Oberspreewald-Lausitz II,12,Brandenburg,Eastern Germany
+66,Altmark,15,Sachsen-Anhalt,Eastern Germany
+67,Börde – Jerichower Land,15,Sachsen-Anhalt,Eastern Germany
+68,Harz,15,Sachsen-Anhalt,Eastern Germany
+69,Magdeburg,15,Sachsen-Anhalt,Eastern Germany
+70,Dessau – Wittenberg,15,Sachsen-Anhalt,Eastern Germany
+71,Anhalt,15,Sachsen-Anhalt,Eastern Germany
+72,Halle,15,Sachsen-Anhalt,Eastern Germany
+73,Burgenland – Saalekreis,15,Sachsen-Anhalt,Eastern Germany
+74,Mansfeld,15,Sachsen-Anhalt,Eastern Germany
+75,Berlin-Mitte,11,Berlin,Cities
+76,Berlin-Pankow,11,Berlin,Cities
+77,Berlin-Reinickendorf,11,Berlin,Cities
+78,Berlin-Spandau – Charlottenburg Nord,11,Berlin,Cities
+79,Berlin-Steglitz-Zehlendorf,11,Berlin,Cities
+80,Berlin-Charlottenburg-Wilmersdorf,11,Berlin,Cities
+81,Berlin-Tempelhof-Schöneberg,11,Berlin,Cities
+82,Berlin-Neukölln,11,Berlin,Cities
+83,Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost,11,Berlin,Cities
+84,Berlin-Treptow-Köpenick,11,Berlin,Cities
+85,Berlin-Marzahn-Hellersdorf,11,Berlin,Cities
+86,Berlin-Lichtenberg,11,Berlin,Cities
+87,Aachen I,5,Nordrhein-Westfalen,Cities
+88,Aachen II,5,Nordrhein-Westfalen,Western Germany
+89,Heinsberg,5,Nordrhein-Westfalen,Western Germany
+90,Düren,5,Nordrhein-Westfalen,Western Germany
+91,Rhein-Erft-Kreis I,5,Nordrhein-Westfalen,Western Germany
+92,Euskirchen – Rhein-Erft-Kreis II,5,Nordrhein-Westfalen,Western Germany
+93,Köln I,5,Nordrhein-Westfalen,Cities
+94,Köln II,5,Nordrhein-Westfalen,Cities
+95,Köln III,5,Nordrhein-Westfalen,Cities
+96,Bonn,5,Nordrhein-Westfalen,Cities
+97,Rhein-Sieg-Kreis I,5,Nordrhein-Westfalen,Western Germany
+98,Rhein-Sieg-Kreis II,5,Nordrhein-Westfalen,Western Germany
+99,Oberbergischer Kreis,5,Nordrhein-Westfalen,Western Germany
+100,Rheinisch-Bergischer Kreis,5,Nordrhein-Westfalen,Western Germany
+101,Leverkusen – Köln IV,5,Nordrhein-Westfalen,Cities
+102,Wuppertal I,5,Nordrhein-Westfalen,Cities
+103,Solingen – Remscheid – Wuppertal II,5,Nordrhein-Westfalen,Cities
+104,Mettmann I,5,Nordrhein-Westfalen,Cities
+105,Mettmann II,5,Nordrhein-Westfalen,Western Germany
+106,Düsseldorf I,5,Nordrhein-Westfalen,Cities
+107,Düsseldorf II,5,Nordrhein-Westfalen,Cities
+108,Neuss I,5,Nordrhein-Westfalen,Western Germany
+109,Mönchengladbach,5,Nordrhein-Westfalen,Cities
+110,Krefeld I – Neuss II,5,Nordrhein-Westfalen,Western Germany
+111,Viersen,5,Nordrhein-Westfalen,Western Germany
+112,Kleve,5,Nordrhein-Westfalen,Western Germany
+113,Wesel I,5,Nordrhein-Westfalen,Western Germany
+114,Krefeld II – Wesel II,5,Nordrhein-Westfalen,Cities
+115,Duisburg I,5,Nordrhein-Westfalen,Cities
+116,Duisburg II,5,Nordrhein-Westfalen,Cities
+117,Oberhausen – Wesel III,5,Nordrhein-Westfalen,Cities
+118,Mülheim – Essen I,5,Nordrhein-Westfalen,Cities
+119,Essen II,5,Nordrhein-Westfalen,Cities
+120,Essen III,5,Nordrhein-Westfalen,Cities
+121,Recklinghausen I,5,Nordrhein-Westfalen,Cities
+122,Recklinghausen II,5,Nordrhein-Westfalen,Western Germany
+123,Gelsenkirchen,5,Nordrhein-Westfalen,Cities
+124,Steinfurt I – Borken I,5,Nordrhein-Westfalen,Western Germany
+125,Bottrop – Recklinghausen III,5,Nordrhein-Westfalen,Western Germany
+126,Borken II,5,Nordrhein-Westfalen,Western Germany
+127,Coesfeld – Steinfurt II,5,Nordrhein-Westfalen,Western Germany
+128,Steinfurt III,5,Nordrhein-Westfalen,Western Germany
+129,Münster,5,Nordrhein-Westfalen,Cities
+130,Warendorf,5,Nordrhein-Westfalen,Western Germany
+131,Gütersloh I,5,Nordrhein-Westfalen,Western Germany
+132,Bielefeld – Gütersloh II,5,Nordrhein-Westfalen,Cities
+133,Herford – Minden-Lübbecke II,5,Nordrhein-Westfalen,Western Germany
+134,Minden-Lübbecke I,5,Nordrhein-Westfalen,Western Germany
+135,Lippe I,5,Nordrhein-Westfalen,Western Germany
+136,Höxter – Lippe II,5,Nordrhein-Westfalen,Western Germany
+137,Paderborn – Gütersloh III,5,Nordrhein-Westfalen,Western Germany
+138,Hagen – Ennepe-Ruhr-Kreis I,5,Nordrhein-Westfalen,Western Germany
+139,Ennepe-Ruhr-Kreis II,5,Nordrhein-Westfalen,Western Germany
+140,Bochum I,5,Nordrhein-Westfalen,Cities
+141,Herne – Bochum II,5,Nordrhein-Westfalen,Cities
+142,Dortmund I,5,Nordrhein-Westfalen,Cities
+143,Dortmund II,5,Nordrhein-Westfalen,Cities
+144,Unna I,5,Nordrhein-Westfalen,Western Germany
+145,Hamm – Unna II,5,Nordrhein-Westfalen,Western Germany
+146,Soest,5,Nordrhein-Westfalen,Western Germany
+147,Hochsauerlandkreis,5,Nordrhein-Westfalen,Western Germany
+148,Siegen-Wittgenstein,5,Nordrhein-Westfalen,Western Germany
+149,Olpe – Märkischer Kreis I,5,Nordrhein-Westfalen,Western Germany
+150,Märkischer Kreis II,5,Nordrhein-Westfalen,Western Germany
+151,Nordsachsen,14,Sachsen,Eastern Germany
+152,Leipzig I,14,Sachsen,Cities
+153,Leipzig II,14,Sachsen,Cities
+154,Leipzig-Land,14,Sachsen,Eastern Germany
+155,Meißen,14,Sachsen,Eastern Germany
+156,Bautzen I,14,Sachsen,Eastern Germany
+157,Görlitz,14,Sachsen,Eastern Germany
+158,Sächsische Schweiz-Osterzgebirge,14,Sachsen,Eastern Germany
+159,Dresden I,14,Sachsen,Cities
+160,Dresden II – Bautzen II,14,Sachsen,Eastern Germany
+161,Mittelsachsen,14,Sachsen,Eastern Germany
+162,Chemnitz,14,Sachsen,Cities
+163,Chemnitzer Umland – Erzgebirgskreis II,14,Sachsen,Eastern Germany
+164,Erzgebirgskreis I,14,Sachsen,Eastern Germany
+165,Zwickau,14,Sachsen,Eastern Germany
+166,Vogtlandkreis,14,Sachsen,Eastern Germany
+167,Waldeck,6,Hessen,Western Germany
+168,Kassel,6,Hessen,Western Germany
+169,Werra-Meißner – Hersfeld-Rotenburg,6,Hessen,Western Germany
+170,Schwalm-Eder,6,Hessen,Western Germany
+171,Marburg,6,Hessen,Western Germany
+172,Lahn-Dill,6,Hessen,Western Germany
+173,Gießen,6,Hessen,Western Germany
+174,Fulda,6,Hessen,Western Germany
+175,Main-Kinzig – Wetterau II – Schotten,6,Hessen,Western Germany
+176,Hochtaunus,6,Hessen,Western Germany
+177,Wetterau I,6,Hessen,Western Germany
+178,Rheingau-Taunus – Limburg,6,Hessen,Western Germany
+179,Wiesbaden,6,Hessen,Cities
+180,Hanau,6,Hessen,Western Germany
+181,Main-Taunus,6,Hessen,Cities
+182,Frankfurt am Main I,6,Hessen,Cities
+183,Frankfurt am Main II,6,Hessen,Cities
+184,Groß-Gerau,6,Hessen,Western Germany
+185,Offenbach,6,Hessen,Cities
+186,Darmstadt,6,Hessen,Western Germany
+187,Odenwald,6,Hessen,Western Germany
+188,Bergstraße,6,Hessen,Western Germany
+189,Eichsfeld – Nordhausen – Kyffhäuserkreis,16,Thüringen,Eastern Germany
+190,Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis,16,Thüringen,Eastern Germany
+191,Jena – Sömmerda – Weimarer Land I,16,Thüringen,Eastern Germany
+192,Gotha – Ilm-Kreis,16,Thüringen,Eastern Germany
+193,Erfurt – Weimar – Weimarer Land II,16,Thüringen,Eastern Germany
+194,Gera – Greiz – Altenburger Land,16,Thüringen,Eastern Germany
+195,Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis,16,Thüringen,Eastern Germany
+196,Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg,16,Thüringen,Eastern Germany
+197,Neuwied,7,Rheinland-Pfalz,Western Germany
+198,Ahrweiler,7,Rheinland-Pfalz,Western Germany
+199,Koblenz,7,Rheinland-Pfalz,Western Germany
+200,Mosel/Rhein-Hunsrück,7,Rheinland-Pfalz,Western Germany
+201,Kreuznach,7,Rheinland-Pfalz,Western Germany
+202,Bitburg,7,Rheinland-Pfalz,Western Germany
+203,Trier,7,Rheinland-Pfalz,Western Germany
+204,Montabaur,7,Rheinland-Pfalz,Western Germany
+205,Mainz,7,Rheinland-Pfalz,Western Germany
+206,Worms,7,Rheinland-Pfalz,Western Germany
+207,Ludwigshafen/Frankenthal,7,Rheinland-Pfalz,Western Germany
+208,Neustadt – Speyer,7,Rheinland-Pfalz,Western Germany
+209,Kaiserslautern,7,Rheinland-Pfalz,Western Germany
+210,Pirmasens,7,Rheinland-Pfalz,Western Germany
+211,Südpfalz,7,Rheinland-Pfalz,Western Germany
+212,Altötting,9,Bayern,Southern Germany
+213,Erding – Ebersberg,9,Bayern,Southern Germany
+214,Freising,9,Bayern,Southern Germany
+215,Fürstenfeldbruck,9,Bayern,Southern Germany
+216,Ingolstadt,9,Bayern,Southern Germany
+217,München-Nord,9,Bayern,Cities
+218,München-Ost,9,Bayern,Cities
+219,München-Süd,9,Bayern,Cities
+220,München-West/Mitte,9,Bayern,Cities
+221,München-Land,9,Bayern,Southern Germany
+222,Rosenheim,9,Bayern,Southern Germany
+223,Bad Tölz-Wolfratshausen – Miesbach,9,Bayern,Southern Germany
+224,Starnberg – Landsberg am Lech,9,Bayern,Southern Germany
+225,Traunstein,9,Bayern,Southern Germany
+226,Weilheim,9,Bayern,Southern Germany
+227,Deggendorf,9,Bayern,Southern Germany
+228,Landshut,9,Bayern,Southern Germany
+229,Passau,9,Bayern,Southern Germany
+230,Rottal-Inn,9,Bayern,Southern Germany
+231,Straubing,9,Bayern,Southern Germany
+232,Amberg,9,Bayern,Southern Germany
+233,Regensburg,9,Bayern,Southern Germany
+234,Schwandorf,9,Bayern,Southern Germany
+235,Weiden,9,Bayern,Southern Germany
+236,Bamberg,9,Bayern,Southern Germany
+237,Bayreuth,9,Bayern,Southern Germany
+238,Coburg,9,Bayern,Southern Germany
+239,Hof,9,Bayern,Southern Germany
+240,Kulmbach,9,Bayern,Southern Germany
+241,Ansbach,9,Bayern,Southern Germany
+242,Erlangen,9,Bayern,Southern Germany
+243,Fürth,9,Bayern,Southern Germany
+244,Nürnberg-Nord,9,Bayern,Cities
+245,Nürnberg-Süd,9,Bayern,Cities
+246,Roth,9,Bayern,Southern Germany
+247,Aschaffenburg,9,Bayern,Southern Germany
+248,Bad Kissingen,9,Bayern,Southern Germany
+249,Main-Spessart,9,Bayern,Southern Germany
+250,Schweinfurt,9,Bayern,Southern Germany
+251,Würzburg,9,Bayern,Southern Germany
+252,Augsburg-Stadt,9,Bayern,Cities
+253,Augsburg-Land,9,Bayern,Southern Germany
+254,Donau-Ries,9,Bayern,Southern Germany
+255,Neu-Ulm,9,Bayern,Southern Germany
+256,Oberallgäu,9,Bayern,Southern Germany
+257,Ostallgäu,9,Bayern,Southern Germany
+258,Stuttgart I,8,Baden-Württemberg,Cities
+259,Stuttgart II,8,Baden-Württemberg,Cities
+260,Böblingen,8,Baden-Württemberg,Southern Germany
+261,Esslingen,8,Baden-Württemberg,Cities
+262,Nürtingen,8,Baden-Württemberg,Southern Germany
+263,Göppingen,8,Baden-Württemberg,Southern Germany
+264,Waiblingen,8,Baden-Württemberg,Southern Germany
+265,Ludwigsburg,8,Baden-Württemberg,Southern Germany
+266,Neckar-Zaber,8,Baden-Württemberg,Southern Germany
+267,Heilbronn,8,Baden-Württemberg,Southern Germany
+268,Schwäbisch Hall – Hohenlohe,8,Baden-Württemberg,Southern Germany
+269,Backnang – Schwäbisch Gmünd,8,Baden-Württemberg,Southern Germany
+270,Aalen – Heidenheim,8,Baden-Württemberg,Southern Germany
+271,Karlsruhe-Stadt,8,Baden-Württemberg,Cities
+272,Karlsruhe-Land,8,Baden-Württemberg,Southern Germany
+273,Rastatt,8,Baden-Württemberg,Southern Germany
+274,Heidelberg,8,Baden-Württemberg,Cities
+275,Mannheim,8,Baden-Württemberg,Cities
+276,Odenwald – Tauber,8,Baden-Württemberg,Southern Germany
+277,Rhein-Neckar,8,Baden-Württemberg,Southern Germany
+278,Bruchsal – Schwetzingen,8,Baden-Württemberg,Southern Germany
+279,Pforzheim,8,Baden-Württemberg,Southern Germany
+280,Calw,8,Baden-Württemberg,Southern Germany
+281,Freiburg,8,Baden-Württemberg,Southern Germany
+282,Lörrach – Müllheim,8,Baden-Württemberg,Southern Germany
+283,Emmendingen – Lahr,8,Baden-Württemberg,Southern Germany
+284,Offenburg,8,Baden-Württemberg,Southern Germany
+285,Rottweil – Tuttlingen,8,Baden-Württemberg,Southern Germany
+286,Schwarzwald-Baar,8,Baden-Württemberg,Southern Germany
+287,Konstanz,8,Baden-Württemberg,Southern Germany
+288,Waldshut,8,Baden-Württemberg,Southern Germany
+289,Reutlingen,8,Baden-Württemberg,Southern Germany
+290,Tübingen,8,Baden-Württemberg,Southern Germany
+291,Ulm,8,Baden-Württemberg,Southern Germany
+292,Biberach,8,Baden-Württemberg,Southern Germany
+293,Bodensee,8,Baden-Württemberg,Southern Germany
+294,Ravensburg,8,Baden-Württemberg,Southern Germany
+295,Zollernalb – Sigmaringen,8,Baden-Württemberg,Southern Germany
+296,Saarbrücken,10,Saarland,Western Germany
+297,Saarlouis,10,Saarland,Western Germany
+298,St. Wendel,10,Saarland,Western Germany
+299,Homburg,10,Saarland,Western Germany
