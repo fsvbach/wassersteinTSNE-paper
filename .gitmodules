@@ -1,6 +1,3 @@
 [submodule "WassersteinTSNE"]
 	path = WassersteinTSNE
 	url = git@github.com:fsvbach/WassersteinTSNE.git
-[submodule "Report"]
-	path = Report
-	url = https://git.overleaf.com/6193c3dc1b0802132ed859c7
