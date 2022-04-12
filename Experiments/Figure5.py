@@ -11,11 +11,7 @@ import numpy as np
 import pandas as pd
 import WassersteinTSNE as WT
 
-HGM      = 1
-embed    = 1
-evaluate = 1
 
-title = 'concept'
 ylim=[-35,35]
 xlim=[-20,50]
 ls, htp = 0.8, 0.8
@@ -40,6 +36,7 @@ GWD = WT.GaussianWassersteinDistance(Gaussians)
 TSNE = WT.GaussianTSNE(GWD, seed=9)
 print('Generated Mixture')
 
+
 ratio= .5
 xpad = 3/100
 ypad = xpad/ratio
@@ -48,12 +45,10 @@ y    = (1-3*ypad)/2
 width = WT.ecml_textwidth
 height= ratio*width
 fig = plt.figure(dpi=300, figsize=(width, height))
-
-
 fig.text(xpad/2,1-ypad,'A', va='bottom', ha='left', fontweight='bold')
 
 
-if HGM:
+def HGMM():
     hgm = fig.add_axes([0,ypad,.5-1*xpad,1-2*ypad])
 
     # flattening the dataset
@@ -117,10 +112,10 @@ if HGM:
             xticks=[],yticks=[])
     hgm.set_aspect('equal')
 
-print('Plotted Mixture')
+    print('Plotted Mixture')
 
 ### Embed three ScatterPlots
-if embed:
+def Embed():
     
     for w, a, b, t in zip([0,0.5,1], [0.5,0.5+x+xpad/2,0.5], [2*ypad+y, 2*ypad+y,ypad], ['B','C','D']):
         ax = fig.add_axes([a-xpad/2,b,x,y]) 
@@ -133,14 +128,14 @@ if embed:
 
         # ax.axis('off')
         
-print('Plotted embeddings')
-
+    print('Plotted embeddings')
+    
     
 ### Calculate Accuracies
-if evaluate:
+def Evaluate(recompute=False):
     acc = fig.add_axes([0.5+x,ypad,x,y]) 
 
-    if evaluate==2:
+    if recompute:
         accs = []
         aris = []
         w_range= np.linspace(0,1,15)
@@ -174,4 +169,14 @@ if evaluate:
     fig.text(0.5+x,ypad+y, 'E', va='bottom', ha='left', weight='bold')
     acc.tick_params(axis='both', which='major', pad=1)
 
-fig.savefig(f"Figures/Figure5.pdf")
+
+def save():
+    fig.savefig(f"Figures/Figure5.pdf")
+    return fig
+
+
+if __name__ == '__main__':
+    HGMM()
+    Embed()
+    Evaluate()
+    save()

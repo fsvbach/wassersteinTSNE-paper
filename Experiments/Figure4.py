@@ -25,7 +25,6 @@ for i in range(4):
     mixture.ClassWisharts[i].nu = 4
 mixture.generate_data()
 WT.plotMixture(mixture, std=4, ax=ax)
-# figure.savefig("Plots/SyntheticHGM_EasyHGM.svg")
 limits = np.vstack((mixture.data.min(),mixture.data.max()))
 L = limits.mean(axis=0)
 (xmin, ymin), (xmax, ymax) = (limits-L)*(1.1,1.1)+L

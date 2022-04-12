@@ -32,6 +32,12 @@ class Bundestagswahl:
     # letter = letter.divide(letter.Gültige, axis='rows')
     # letter.drop('Gültige', axis=1, inplace=True)
     
+    ### rename parties
+    names = dict(zip(data.columns,data.columns))
+    names['GRÜNE'] = 'Grüne'
+    names['DIE LINKE'] = 'Linke'
+    data.columns = data.columns.map(names)
+    
     def labeldict(self,column='Bundesland'):
         labels = pd.read_csv('Datasets/GER2017/Wahlkreise/labels.csv',
                           index_col=0)

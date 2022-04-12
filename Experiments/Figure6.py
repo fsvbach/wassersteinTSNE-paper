@@ -19,7 +19,7 @@ numbers = {v: k for k, v in names.items()}
 dataset = GER.data
 
 comparis = ['Mittelsachsen', 'Mittelems'], ['Berlin-Neukölln', 'Hamburg-Mitte']
-features = ['AfD', 'DIE LINKE']
+features = ['AfD', 'Linke']
 location = [0.19,0.31], [0.52, 0.03]
 
 fig, axes = plt.subplots(1,2, figsize=(WT.ecml_textwidth, .5*WT.ecml_textwidth))
