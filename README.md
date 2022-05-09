@@ -1,5 +1,7 @@
-# WassersteinTSNE-paper
+# Wasserstein t-SNE 
 
+This repository reproduces the figures in the paper on [Arxiv.org](https://Arxiv.org).
 
-git clone ...
-git submodule update --init --recursive
+For the python package `WassersteinTSNE` see [WassersteinTSNE](https://github.com/fsvbach/WassersteinTSNE).
+
+## Version 
