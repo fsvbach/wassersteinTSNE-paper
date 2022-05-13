@@ -6,22 +6,23 @@ Created on Mon Apr  4 14:46:38 2022
 @author: bachmann
 """
 
-from Datasets.GER2017 import Bundestagswahl
 import WassersteinTSNE as WT
 import matplotlib.pyplot as plt
 import itertools as it
 
+from Datasets.GER2017 import Bundestagswahl
+from params import textwidth
+
 GER     = Bundestagswahl()
-labels  = GER.labeldict()
+labeldict  = GER.labeldict()
 dataset = GER.data
 map_wk  = GER.mapdict()
 
 Gaussians = WT.Dataset2Gaussians(dataset, normalize=False)
-WSDM = WT.GaussianWassersteinDistance(Gaussians)
-TSNE = WT.GaussianTSNE(WSDM, seed=9)
+GWD = WT.GaussianWassersteinDistance(Gaussians)
 
-embedding = TSNE.fit(w=0.75, trafo=WT.RotationMatrix(90))
-embedding.index = embedding.index.to_series().map(labels)
+embedding = WT.ComputeTSNE(GWD.matrix(w=0.75), seed=9, trafo=WT.RotationMatrix(90))
+embedding.index = embedding.index.to_series().map(labeldict)
 
 
 def plot(geographical=True, selection=True):
@@ -33,7 +34,7 @@ def plot(geographical=True, selection=True):
         selection = it.combinations(dataset.columns, r=2)
         M,N = 3,5
     
-    fig, axes = plt.subplots(M,N, figsize=(WT.ecml_textwidth, .25*WT.ecml_textwidth))
+    fig, axes = plt.subplots(M,N, figsize=(textwidth, .25*textwidth))
     
     for ax, (feature1, feature2) in zip(axes.flatten(), selection):    
         corr = dataset.groupby(level=0).corr().fillna(0)
@@ -45,7 +46,7 @@ def plot(geographical=True, selection=True):
         else:
             panel='A'
             sizes = corr.swaplevel().loc[feature1, feature2].values
-            im=ax.scatter(embedding['x'], embedding['y'], s=.5,
+            ax.scatter(embedding['x'], embedding['y'], s=.5,
                        c=sizes, cmap='seismic', vmax=1, vmin=-1)
             ax.set_aspect(0.49568)
             

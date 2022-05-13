@@ -6,27 +6,30 @@ Created on Wed Feb 23 12:35:22 2022
 @author: fsvbach
 """
 
+import WassersteinTSNE as WT 
 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import linprog
-import WassersteinTSNE as WT 
+
 from Datasets.EVS2020 import EuropeanValueStudy
+from params import textwidth
+
 
 EVS = EuropeanValueStudy()
 labels  = EVS.labeldict()
 dataset = EVS.data
 
-feature = 'v102'
 dataset.index = dataset.index.to_series().map(labels)
 
-barheight = 0.1
-barwidth  = 1 - barheight
-ratio     = 1 / (2-barheight)    
-    
+Y = 0.1
+X = 1 - Y
+R = 1 / (2-Y)    
+
+
 def Histogram():
-    P1 = np.histogram(dataset.loc['de', feature], bins=10, density=False)
-    P2 = np.histogram(dataset.loc['al', feature], bins=10, density=False)
+    P1 = np.histogram(dataset.loc['de', 'v102'], bins=10, density=False)
+    P2 = np.histogram(dataset.loc['al', 'v102'], bins=10, density=False)
     
     P1 = P1[0]/P1[0].sum()
     P2 = P2[0]/P2[0].sum()
@@ -46,11 +49,11 @@ def Histogram():
     emd = round(opt_res.fun,3)
     gamma = opt_res.x.reshape((n, n))
     
-    fig = plt.figure(dpi=300, figsize=(.5*WT.ecml_textwidth, .5*ratio*WT.ecml_textwidth))
-    ax2 = fig.add_axes([0,0,barheight*ratio,barwidth])
-    ax1 = fig.add_axes([barheight*ratio,1-barheight,barwidth*ratio,barheight])
-    ax3 = fig.add_axes([(barheight+barwidth)*ratio,0,barwidth*ratio,barwidth])
-    ax4 = fig.add_axes([barheight*ratio,0,barwidth*ratio,barwidth])
+    fig = plt.figure(dpi=300, figsize=(.5*textwidth, .5*R*textwidth))
+    ax2 = fig.add_axes([0,0,Y*R,X])
+    ax1 = fig.add_axes([Y*R,1-Y,X*R,Y])
+    ax3 = fig.add_axes([(Y+X)*R,0,X*R,X])
+    ax4 = fig.add_axes([Y*R,0,X*R,X])
     [ax.set_axis_off() for ax in [ax1,ax2,ax3,ax4]]
     
     ax1.bar(space, P1, width=step, color='C0', alpha=0.5)
@@ -67,8 +70,8 @@ def Histogram():
 
 ### UNIFORM
 def Uniform():
-    U = dataset.loc['de', feature][:45].values.reshape(-1,1)
-    V = dataset.loc['al', feature][:45].values.reshape(-1,1)
+    U = dataset.loc['de', 'v102'][:45].values.reshape(-1,1)
+    V = dataset.loc['al', 'v102'][:45].values.reshape(-1,1)
     
     n,m = len(U), len(V)
     D = WT.EuclideanDistance(U, V)
@@ -80,11 +83,11 @@ def Uniform():
     emd = round( opt_res.fun,3)
     gamma = opt_res.x.reshape((n, m))
     
-    fig = plt.figure(dpi=300, figsize=(.5*WT.ecml_textwidth, .5*ratio*WT.ecml_textwidth))
-    ax2 = fig.add_axes([0,0,barheight*ratio,barwidth])
-    ax1 = fig.add_axes([barheight*ratio,1-barheight,barwidth*ratio,barheight])
-    ax3 = fig.add_axes([(barheight+barwidth)*ratio,0,barwidth*ratio,barwidth])
-    ax4 = fig.add_axes([barheight*ratio,0,barwidth*ratio,barwidth])
+    fig = plt.figure(dpi=300, figsize=(.5*textwidth, .5*R*textwidth))
+    ax2 = fig.add_axes([0,0,Y*R,X])
+    ax1 = fig.add_axes([Y*R,1-Y,X*R,Y])
+    ax3 = fig.add_axes([(Y+X)*R,0,X*R,X])
+    ax4 = fig.add_axes([Y*R,0,X*R,X])
     [ax.set_axis_off() for ax in [ax1,ax2,ax3,ax4]]
     
     ax1.bar(np.arange(n), 1/n, color='C0', alpha=0.5)

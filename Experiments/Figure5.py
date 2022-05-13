@@ -6,11 +6,12 @@ Created on Sun Feb 20 14:20:26 2022
 @author: fsvbach
 """
 
+import WassersteinTSNE as WT
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import WassersteinTSNE as WT
 
+from params import textwidth
 
 ylim=[-35,35]
 xlim=[-20,50]
@@ -33,18 +34,15 @@ mixture.set_params(means   = np.array([[30,0],[30,0],[0,0],[0,0]]),
 mixture.generate_data()
 Gaussians = WT.Dataset2Gaussians(mixture.data)
 GWD = WT.GaussianWassersteinDistance(Gaussians)
-TSNE = WT.GaussianTSNE(GWD, seed=9)
 print('Generated Mixture')
-
 
 ratio= .5
 xpad = 3/100
 ypad = xpad/ratio
 x    = (.5-1.5*xpad)/2
 y    = (1-3*ypad)/2
-width = WT.ecml_textwidth
-height= ratio*width
-fig = plt.figure(dpi=300, figsize=(width, height))
+
+fig = plt.figure(dpi=300, figsize=(textwidth, ratio*textwidth))
 fig.text(xpad/2,1-ypad,'A', va='bottom', ha='left', fontweight='bold')
 
 
@@ -119,7 +117,7 @@ def Embed():
     
     for w, a, b, t in zip([0,0.5,1], [0.5,0.5+x+xpad/2,0.5], [2*ypad+y, 2*ypad+y,ypad], ['B','C','D']):
         ax = fig.add_axes([a-xpad/2,b,x,y]) 
-        embedding = TSNE.fit(w=w).sample(frac=1, random_state=43)
+        embedding = WT.ComputeTSNE(GWD.matrix(w=w), seed=9).sample(frac=1, random_state=43)
         embedding.index = embedding.index.to_series().map(mixture.labeldict())
         ax.scatter(embedding['x'], embedding['y'], s=2, linewidth=0, c=embedding.index)
         ax.set(xticks=[],yticks=[])
@@ -140,9 +138,10 @@ def Evaluate(recompute=False):
         aris = []
         w_range= np.linspace(0,1,15)
         for w in w_range:
-            accuracy = TSNE.knn_accuracy(w, mixture.labeldict(), k=5)
+            embedding = WT.ComputeTSNE(GWD.matrix(w=w), seed=9).sample(frac=1, random_state=43)
+            accuracy = WT.knnAccuracy(embedding, mixture.labeldict(), k=5)
             accs.append(accuracy*100) 
-            accuracy = TSNE.adjusted_rand_index(w, mixture.labeldict(),k=5,res=0.08)
+            accuracy = WT.LeidenClusters(GWD.matrix(w=w), mixture.labeldict(),k=5,res=0.08, seed=9)
             aris.append(accuracy*100) 
         results = pd.DataFrame(np.array([accs,aris]).T,index=w_range, columns=['kNN','ARI'])
         results.to_csv(f'Experiments/cache/HGMMresults.csv')
@@ -156,16 +155,9 @@ def Evaluate(recompute=False):
             xticks=np.round(np.linspace(0,1,4),2))
     acc.set_xlabel(r'$\lambda$',labelpad=-4)
     acc.set_ylabel(r'$\%$',labelpad=-4)
-    # acc.set_title(f"evaluation (k=5)")
-    # acc.tick_params(axis="y",direction="in", pad=-22)
-    # acc.tick_params(axis="x",direction="in", pad=-15)
-    # # acc.tick_params(axis="y",direction="in", pad=-22)
     acc.yaxis.tick_right()
     acc.yaxis.set_label_position("right")
-    # acc.legend(loc=(0.45,0.05)) 
     acc.legend(loc='best')
-    # acc.axis('off')
-    # fig.text(0.5+1.5*x,ypad+y,rf"$\lambda$={w}", va='bottom', ha='center')
     fig.text(0.5+x,ypad+y, 'E', va='bottom', ha='left', weight='bold')
     acc.tick_params(axis='both', which='major', pad=1)
 

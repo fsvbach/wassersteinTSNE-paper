@@ -1,3 +1,0 @@
-[submodule "WassersteinTSNE"]
-	path = WassersteinTSNE
-	url = git@github.com:fsvbach/WassersteinTSNE.git
