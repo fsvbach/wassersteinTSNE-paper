@@ -1,7 +1,7 @@
 # Wasserstein t-SNE 
 ###### Fynn Bachmann, Philipp Hennig & Dmitry Kobak
 
-This repository reproduces the figures in the _Wasserstein t-SNE_ paper on [arXiv.org](https://arxiv.org).
+This repository reproduces the figures in the _Wasserstein t-SNE_ paper on [arXiv.org](http://arxiv.org/abs/2205.07531).
 
 For the python package `WassersteinTSNE` see the repository [WassersteinTSNE](https://github.com/fsvbach/WassersteinTSNE). 
 
@@ -20,7 +20,7 @@ This repository uses the WasserteinTSNE package *version 1.1.0* and its dependen
 
 ## Usage
 
-Running `python main.py` will reproduce all Figures in `Figures/Figure{i}.pdf`. This takes about two minutes when using the cached files (default). To recompute these files please see the respetive lines in `main.py` or `Experiments/Figure{i}.py`.
+Running `python main.py` will reproduce all Figures in `Figures/Figure{i}.pdf`. This takes about two minutes when using the cached files (default). To recompute these files please see the respective lines in `main.py` or `Experiments/Figure{i}.py`.
 
 ## Data
 
