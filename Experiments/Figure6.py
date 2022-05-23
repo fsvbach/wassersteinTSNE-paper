@@ -21,12 +21,11 @@ dataset = GER.data
 
 comparis = ['Mittelsachsen', 'Mittelems'], ['Berlin-Neukölln', 'Hamburg-Mitte']
 features = ['AfD', 'Linke']
-location = [0.19,0.31], [0.52, 0.03]
 
 def plot():
     fig, axes = plt.subplots(1,2, figsize=(textwidth, .5*textwidth))
     
-    for wahlkreise, ax, loc, t in zip(comparis, axes, location, ['A','B']):
+    for wahlkreise, ax, t in zip(comparis, axes, ['A','B']):
             
         U = dataset.loc[numbers[wahlkreise[0]], features]
         V = dataset.loc[numbers[wahlkreise[1]], features]
@@ -74,7 +73,10 @@ def plot():
             r'$d_{{Gauss}}=%.3f$' % (diff_gauss, ),
             r'$d_{{Exact}}=%.3f$' % (diff_exact, )))
         
-        ax.text(loc[0], loc[1], textstr, fontsize=6, va='bottom', ha='right')
+        if t == 'A':
+            ax.text(0.02, 0.43,  textstr, fontsize=6, va='top', ha='left')
+        if t == 'B':
+            ax.text(0.53, 0.02, textstr, fontsize=6, va='bottom', ha='right')
         ax.legend(loc='best',  handletextpad=0.05)
         fig.text(0,1, t, va='bottom', ha='left', weight='bold', transform=ax.transAxes)
     

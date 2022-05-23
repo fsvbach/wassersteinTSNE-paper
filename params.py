@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 inches_per_pt = 1 / 72.27
 paper     = 347.12354
-beamer    = 398.3386
+beamer    = 435.24408
 textwidth = paper * inches_per_pt
 
 gray  = (155 / 255, 155 / 255, 155 / 255) 

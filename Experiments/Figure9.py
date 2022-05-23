@@ -57,7 +57,7 @@ def plot(geographical=True, selection=True):
     fig.text(-.2,1, panel, va='bottom', ha='left', weight='bold',  transform=axes[0].transAxes)
     
     fig.tight_layout()
-    fig.savefig(f"Figures/Figure9{panel}.pdf")
+    fig.savefig(f"Figures/Figure9{panel}.pdf", bbox_inches='tight', pad_inches=0.01)
     
 
 if __name__ == '__main__':
