@@ -31,7 +31,7 @@ for w, trafo in zip(w_range, trafos):
     embedding = WT.ComputeTSNE(GWD.matrix(w=w), trafo=trafo, seed=9)
     knn, _ = WT.knnAccuracy(embedding, labeldict, k=5)
     
-    embedding['labels']   = embedding.index.to_series(name='color').map(labeldict)
+    embedding['labels']   = embedding.index.to_series().map(labeldict)
     embedding['clusters'] = clusters
     embeddings.append(embedding)
     
@@ -40,15 +40,16 @@ for w, trafo in zip(w_range, trafos):
 def plot():
     fig, axes = plt.subplots(1,3,figsize=(textwidth,.4*textwidth))
     
-    mapping = {0:0,1:1,2:3,3:2}
+    colormapping = {0:0,1:1,2:3,3:2}
+    labelmapping = {0:3,1:0,2:2,3:1}
     for w, ax, embedding, acc, t in zip(w_range, axes, embeddings, accuracies, ['A','B','C']):
         i = 0
         for label, data in embedding.groupby(by='labels'):
             # X, Y, c = data.values.T
             for c, XY in data.groupby(by='clusters'):
                 if w==0.75:
-                    c = mapping[c]
-                ax.scatter(XY.x, XY.y, label=label, s=5,  color=colors[i], marker=shapes[c])
+                    c = colormapping[c]
+                ax.scatter(XY.x, XY.y, label=label, s=5,  color='C'+str(c), marker=shapes[labelmapping[i]])
             i+=1
         ax.set_xticks([]) # labeldict 
         ax.set_yticks([])
@@ -66,15 +67,12 @@ def plot():
     lgnd = fig.legend(by_label.values(), by_label.keys(), bbox_to_anchor=(.5,-0.03), loc='lower center', ncol=4, handletextpad=0.1)
     for handle in lgnd.legendHandles:
         handle._sizes =[20]
-        
-############
-# FIX WRONG LEGEND HERE
-############
+        handle.set_color('black')
 
     fig.tight_layout()
     plt.subplots_adjust(wspace=0.1, 
                         hspace=0.0)
-    fig.savefig(f"Figures/Figure7.pdf", dpi=300, bbox_inches='tight', pad_inches=0.01)
+    fig.savefig(f"Figures/Figure7.pdf", dpi=300, bbox_inches='tight', pad_inches=0.02)
     return fig
 
 if __name__ == '__main__':
