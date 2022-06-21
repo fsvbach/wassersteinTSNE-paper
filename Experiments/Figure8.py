@@ -57,7 +57,7 @@ def plot():
     
         # ax.set_aspect('equal')
         
-        text = r'$\alpha_{\mathrm{kNN}}$'+'=%.2f\n'%acc[0]+r'$\alpha_{\mathrm{ARI}}$=%.2f' %acc[1]
+        text = r'$\mathrm{kNN}$'+': %.2f\n'%acc[0]+r'$\mathrm{ARI}$: %.2f' %acc[1]
         ax.text(0.99, 0.99, text, transform=ax.transAxes, va='top', ha='right')
     
     handles, labels = axes[1].get_legend_handles_labels()
