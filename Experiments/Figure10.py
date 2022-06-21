@@ -80,7 +80,7 @@ def plot():
     ax1.set_yticks([])
     ax1.set_title(rf"exact")
     fig.text(0,1, 'A', va='bottom', ha='left', weight='bold', transform=ax1.transAxes)
-    text = r'$\alpha_{\mathrm{kNN}}$'+'=%.2f\n'%KNN+r'$\alpha_{\mathrm{ARI}}$=%.2f' %ARI
+    text = r'$\mathrm{kNN}$'+': %.2f\n'%KNN+r'$\mathrm{ARI}$: %.2f' %ARI
     ax1.text(0.99, 0.99, text, transform=ax1.transAxes, va='top', ha='right')
     
     i = 0
@@ -110,7 +110,7 @@ def plot():
     ax3.yaxis.set_label_position("right")
     ax3.legend(handlelength=2.3)
     fig.text(0,1, 'C', va='bottom', ha='left', weight='bold', transform=ax3.transAxes)
-    text = r'$\alpha_{\mathrm{kNN}}$'+'=%.2f\n'%knn[idx]+r'$\alpha_{\mathrm{ARI}}$=%.2f' %ari[idx]
+    text = r'$\mathrm{kNN}$'+': %.2f\n'%knn[idx]+r'$\mathrm{ARI}$: %.2f' %ari[idx]
     ax2.text(0.99, 0.99, text, transform=ax2.transAxes, va='top', ha='right')
     
     
