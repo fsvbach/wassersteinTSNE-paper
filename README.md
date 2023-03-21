@@ -1,7 +1,7 @@
 # Wasserstein t-SNE 
 ###### Fynn Bachmann, Philipp Hennig & Dmitry Kobak
 
-This repository reproduces the figures in the _Wasserstein t-SNE_ paper on [arXiv.org](http://arxiv.org/abs/2205.07531).
+This repository reproduces the figures in the _Wasserstein t-SNE_ paper in the proceedings of [ECML/PKDD 2022](https://link.springer.com/chapter/10.1007/978-3-031-26387-3_7).
 
 For the python package `WassersteinTSNE` see the repository [WassersteinTSNE](https://github.com/fsvbach/WassersteinTSNE). 
 
